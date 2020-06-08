@@ -1,0 +1,31 @@
+{% extends 'courses/main-layout.html' %}
+
+<!-- class for header navigation link -->
+{% block link_home %}on_the_page{% endblock %}
+
+<!-- Main section -->
+
+{% block main_section %}
+<div class="courses">
+
+    {% for course in courses %}
+        <div class="course card">
+            {% if course.image %}
+                <img src="{{ course.image.url }}" alt="{{ course.title }}" class="card-img-top">
+            {% else %}
+                <img src="/media/default.png" alt="{{ course.title }}">
+            {% endif %}
+
+            <div class="card-body card-center mb-3">
+                <h5 class="card-title">{{ course.title }}</h5>
+                <p class="card-text">{{ course.description|truncatechars:70 }}</p>
+            </div>
+            <div class="card-body">
+                <a href="{{ course.get_absolute_url }}" class="btn btn-outline-secondary mt-3">Посмотреть</a>
+            </div>
+
+        </div>
+    {% endfor %}
+
+</div>
+{% endblock main_section %}

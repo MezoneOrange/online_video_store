@@ -1,0 +1,20 @@
+{% extends 'courses/main-layout.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Изменение пароля
+{% endblock title %}
+
+{% block main_section %}
+<div class="container">
+    <div class="form-section">
+        <h2>Восстановление пароля</h2>
+        <form method="POST">
+            <!-- обязательный параметр -->
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-outline-danger">Запросить новый пароль</button>
+        </form>
+    </div>
+</div>
+{% endblock main_section %}

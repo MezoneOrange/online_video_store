@@ -1,0 +1,19 @@
+{% extends 'courses/main-layout.html' %}
+{% load crispy_forms_tags %}
+
+<!-- class for header navigation link -->
+{% block link_create_course %}on_the_page{% endblock %}
+
+
+<!-- Main section -->
+{% block main_section %}
+<div class="container">
+    <h3>Добавнение нового курса</h3>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-outline-secondary">Добавить</button>
+    </form>
+
+</div>
+{% endblock main_section %}
