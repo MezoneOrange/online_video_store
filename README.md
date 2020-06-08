@@ -16,11 +16,11 @@ In database, courses have "boolean field" for realisation access permissions for
 Site has a realisation of these functions. On the profile page user could change his data. If you want that works the password recovery function, you got to change the variables in `settings.py` (that displaying below) on yours.  
 
 ``
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'mezorservice123@gmail.com'
-EMAIL_HOST_PASSWORD = 'dsfasdgdfafdss'
-EMAIL_PORT = 587
+EMAIL_USE_TLS = True  
+EMAIL_HOST = 'smtp.gmail.com'  
+EMAIL_HOST_USER = 'mezorservice123@gmail.com'  
+EMAIL_HOST_PASSWORD = 'dsfasdgdfafdss'  
+EMAIL_PORT = 587  
 ``
 
 - ### Templatly realisation of payments.  
@@ -30,6 +30,8 @@ EMAIL_PORT = 587
 ## On the website were used:
 - Fonts: "EB Garamond", "Oswald" from https://fonts.google.com/ .
 - Styles: "Bootstrap4" and own-styles.
+
+###### Creator: Dmitry Shelukhin
 
 ### P.S.
 
