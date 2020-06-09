@@ -1,5 +1,5 @@
 # Online video store   
-###### Second django project from "Python developer" course in programming school "IT technologies itProger"  
+###### Second django project from "Python developer" course in programming school "IT technologies itProger" https://itproger.com  
 
 ## In the site realised online store with video courses:  
 
